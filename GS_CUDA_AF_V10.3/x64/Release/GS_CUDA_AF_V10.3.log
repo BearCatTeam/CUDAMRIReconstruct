@@ -1,0 +1,31 @@
+﻿Build started 14/01/2017 11:07:25 PM.
+     1>Project "E:\MRI\workspace\src\GS_CUDA_AF_V10.3\GS_CUDA_AF_V10.3\GS_CUDA_AF_V10.3.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DWIN64 /DNDEBUG /D_CONSOLE /D_MBCS /D_MBCS /DNOMINMAX /DAF_CUDA /DAF_CPU /DAF_OPENCL /DAF_RELEASE /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I. /FIcuda_runtime.h /c E:\MRI\workspace\src\GS_CUDA_AF_V10.3\GS_CUDA_AF_V10.3\kernel.cu 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\nguye\AppData\Local\Temp\tmp00f6876966324e43b9407c5836adac6b.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_50,code=\"sm_50,compute_50\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static --default-stream per-thread    -use_fast_math -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -D_MBCS -DNOMINMAX -DAF_CUDA -DAF_CPU -DAF_OPENCL -DAF_RELEASE -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD " -o x64\Release\kernel.cu.obj "E:\MRI\workspace\src\GS_CUDA_AF_V10.3\GS_CUDA_AF_V10.3\kernel.cu"
+         
+         E:\MRI\workspace\src\GS_CUDA_AF_V10.3\GS_CUDA_AF_V10.3>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_50,code=\"sm_50,compute_50\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static --default-stream per-thread    -use_fast_math -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -D_MBCS -DNOMINMAX -DAF_CUDA -DAF_CPU -DAF_OPENCL -DAF_RELEASE -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD " -o x64\Release\kernel.cu.obj "E:\MRI\workspace\src\GS_CUDA_AF_V10.3\GS_CUDA_AF_V10.3\kernel.cu" 
+         kernel.cu
+     1>E:/MRI/workspace/src/GS_CUDA_AF_V10.3/GS_CUDA_AF_V10.3/kernel.cu(70): warning C4244: 'argument' : conversion from 'dim_t' to 'const unsigned int', possible loss of data
+     1>E:/MRI/workspace/src/GS_CUDA_AF_V10.3/GS_CUDA_AF_V10.3/kernel.cu(71): warning C4244: 'argument' : conversion from 'dim_t' to 'const unsigned int', possible loss of data
+     1>E:/MRI/workspace/src/GS_CUDA_AF_V10.3/GS_CUDA_AF_V10.3/kernel.cu(73): warning C4244: 'argument' : conversion from 'dim_t' to 'const unsigned int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\MRI\workspace\src\GS_CUDA_AF_V10.3\x64\Release\GS_CUDA_AF_V10.3.exe" /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64" /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64" /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64" /LIBPATH:"C:\Program Files\ArrayFire\v3\lib" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib afcuda.lib afcpu.lib afopencl.lib forge.lib af.lib cudart.lib cublas.lib cufft.lib curand.lib cusolver.lib cusparse.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"E:\MRI\workspace\src\GS_CUDA_AF_V10.3\x64\Release\GS_CUDA_AF_V10.3.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\MRI\workspace\src\GS_CUDA_AF_V10.3\x64\Release\GS_CUDA_AF_V10.3.lib" /MACHINE:X64 x64\Release\kernel.cu.obj
+         LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+         GS_CUDA_AF_V10.3.vcxproj -> E:\MRI\workspace\src\GS_CUDA_AF_V10.3\x64\Release\GS_CUDA_AF_V10.3.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\cudart*.dll" "E:\MRI\workspace\src\GS_CUDA_AF_V10.3\x64\Release\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\cudart*.dll" "E:\MRI\workspace\src\GS_CUDA_AF_V10.3\x64\Release\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\cudart*.dll" "E:\MRI\workspace\src\GS_CUDA_AF_V10.3\x64\Release\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\cudart32_80.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\cudart64_80.dll
+                 2 file(s) copied.
+     1>Done Building Project "E:\MRI\workspace\src\GS_CUDA_AF_V10.3\GS_CUDA_AF_V10.3\GS_CUDA_AF_V10.3.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:28.52
